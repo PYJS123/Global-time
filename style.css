@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+body {
+  background-color: #FEFEFE;
+}
+
 .top-banner {
   max-width: 100%;
   text-align: center;
@@ -25,12 +29,33 @@
 
 .city-block {
   background-color: #9effc2;
+  margin: 10px;
 }
 
 .city-block > .city-name {
   background-color: #35455e;
   padding: 15px;
   color: #FEFEFE;
+  flex-grow: 1;
+  text-align: center;
+  font-size: 20px;
+}
+
+.city-block > .city-time {
+  background-color: inherit;
+  padding: 15px;
+  flex-grow: 1;
+  text-align: center;
+  font-size: 20px;
+}
+
+.city-block > .city-sun {
+  background-color: #9e1010;
+  color: #FEFEFE;
+  padding: 15px;
+  flex-grow: 1;
+  text-align: center;
+  font-size: 20px;
 }
 
 .flex-container {

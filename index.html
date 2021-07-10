@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <link rel="shortcut icon" type="image/png" href="https://pyjs123.github.io/Global-time-HTML/assets/favicon.png">
     <link rel="stylesheet" href="style.css">
+    <script src="checkbox.js"></script>
+    <script src="main.js"></script>
     <title>Global Time</title>
   </head>
   <body>
@@ -11,8 +13,13 @@
     <div class="break"></div>
     <div class="main">
       <div class="city-block flex-container">
-        <div class="city-name">London</div>
+        <div class="city-name">Europe/London</div>
+        <div class="city-time">&minus;&minus;:&minus;&minus;</div>
+        <div class="city-sun">Sun up</div>
       </div>
     </div>
+    <br>
+    <input type="checkbox" id="toggle-mode" onclick="switchMode()" style="width: 30px; height: 30px;">
+    <label for="toggle-mode" style="color: #888888"> Toggle mode</label>
   </body>
 </html>
