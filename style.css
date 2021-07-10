@@ -15,10 +15,26 @@
 }
 
 .main {
-  height: 100px;
-  background-color: purple;
+  background-color: #835487;
+  padding: 30px;
 }
 
 .break {
   margin: 30px;
+}
+
+.city-block {
+  background-color: #9effc2;
+}
+
+.city-block > .city-name {
+  background-color: #35455e;
+  padding: 15px;
+  color: #FEFEFE;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
