@@ -63,3 +63,13 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
+
+#take-city, #add-city {
+  cursor: pointer;
+  border-style: none;
+  min-width: 50px;
+  min-height: 50px;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 5px;
+}
