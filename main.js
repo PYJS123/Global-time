@@ -8,6 +8,11 @@ window.onload = async function() {
   countries = await countries.json();
   console.log('Initial data retrieved.');
 
+  updateElems();
+  setInterval(()=>{updateElems();}, 30000);
+}
+
+async function updateElems() {
   let elems = document.getElementsByClassName('main')[0].children;
   for (let i = 0; i < elems.length; i++) {
     try {
