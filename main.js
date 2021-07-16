@@ -1,6 +1,6 @@
 let countries;
 let timeUrl = 'https://worldtimeapi.org/api/timezone/';
-let latlonUrl = 'https://www.metaweather.com/api/location/search/?query=';
+let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
 window.onload = async function() {
   console.log('Elements loaded.');
@@ -17,12 +17,9 @@ window.onload = async function() {
       let time = parsedFetch.datetime.substr(11, 5);
       // Changing time
       elems[i].children[1].innerText = time;
-      // Changing Sun up/down
-      cityName = elems[i].children[0].innerText.split('/')[1];
-      let possibilities = await fetch(latlonUrl+cityName);
-      possibilities = possibilities.json();
-      let latlon = possibilities[0]["latt_long"];
-      console.log(latlon);
+      // Changing Day of week
+      dayNum = parsedFetch["day_of_week"];
+      elems[i].children[2].innerText = days[dayNum];
     } catch(e) {}
   }
   console.log('Elements updated.');
